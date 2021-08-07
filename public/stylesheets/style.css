@@ -3,10 +3,10 @@
   --tertiary: #788585;
   --light-dark: #a1a0a1;
   --border-radius: .3rem;
-  --primary-color: rgb(251,240,207);
+  --primary-color: rgb(211, 251, 207);
   --secondary-color:white;
   --tertiary-color: #ffa10063;
-  --quaternary-color: rgb(155, 9, 9);
+  --quaternary-color: rgb(34, 4, 4);
 }
 
 * {
@@ -17,7 +17,7 @@ body {
   background-color: var(--primary-color);
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: sans-serif;
   color: var(--quaternary-color);
   line-height: 1.5;
   font-size: 24px;
