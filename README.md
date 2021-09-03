@@ -1,19 +1,18 @@
-# slatorer
-# Project 2 - What I Had for Dinner    
+# Model View Controller Challenge - ReadingList   
 
   ## Table of Contents
   * [Description](#challenge-description)
   * [Built With](#built-with)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Screenshot](#screenshot)
+  * [Screenshots](#screenshots)
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Links](#links)
 
   ## Challenge Description
-  This project, assigned by Rutgers Coding Bootcamp, required the creation of an online application utilizing all of the skills acquired from class thus far concerning the frontend and backend. Our project concept was to provide a platform in which users can share their home recipes or any recipes they've enjoyed with the What I Had For Dinner community online. The goal of this application was to create a user interface that would allow a user to post about the fantastic recipes they've tried and be able to communicate with fellow home chefs via commenting functionality on posts.
+  This challenge, assigned by Rutgers Coding Bootcamp, required the creation of an online application with frontend and backend implementation. The goal of this application is to create a user interface that allows a user to post about books they've read, or are interested in reading, and communicate with fellow bookworms via commenting functionality on posts.
 
   ## Built With
   * JavaScript
@@ -25,24 +24,26 @@
   * Animate
 
   ## Installation
-  In order to view the What I Had For Dinner webpage, the user can either install Node.js on their PC initialize Node in the command line, and install the files from package.json or access the webpage via the Heroku link provided below.
-
+  In order to view the ReadingList webpage, the user can either install Node.js on their PC initialize Node in the command line, and install the files from package.json or access the webpage via the Heroku link provided below.
 
   ## Usage
-  The user can access the website via Heroku. Here they can signup to create an account, write posts which include links to recipes, view all posts and comment on other users' posts.They can also edit and delete posts saved on their dashboard.
+  The user can access the website via Heroku. Here they can signup to create an account, write posts which include book titles and their thoughts, view all posts and comment on other users' posts. They can also edit and delete posts saved on their dashboard.
 
-  ## Screenshot
+  ## Screenshots
   ### Home Page
-  ![Home Screen](https://user-images.githubusercontent.com/81491306/127758190-f4024664-0ff4-46aa-b04d-aed5e5fe755d.JPG)
+  ![Home Screen](https://user-images.githubusercontent.com/81491306/132041450-ef112a31-9f94-4851-9439-2658f8fbbb1a.JPG)
 
-  ### Login
-  ![User Login or Signup](https://user-images.githubusercontent.com/81491306/127758198-04c2c2a5-3344-4326-a3a3-8b2b70451cdf.JPG)
+  ### Login/Signup
+  ![User Login or Signup](https://user-images.githubusercontent.com/81491306/132041529-6e74c888-3e0b-44c8-a1c8-96def781bbb6.JPG)
 
   ### Post Creation
-  ![Create a New Post](https://user-images.githubusercontent.com/81491306/127758186-c07d86f0-9cff-457c-a83d-2cb8e7e57a88.JPG)
+  ![Create a New Post](https://user-images.githubusercontent.com/81491306/132041570-178083c1-a855-45fb-b288-9ec6df939f80.JPG)
 
-  ### Comment on Posts
-  ![Add Comments to Posts](https://user-images.githubusercontent.com/81491306/127758178-c3fa4f3d-969c-4b8a-bf79-04a7003bb2f0.JPG)
+  ### Dashboard
+  ![User Dashboard](https://user-images.githubusercontent.com/81491306/132041411-723b2789-ed40-466b-a306-c780567f6e6b.JPG)
+
+  ### Comments
+  ![Add Comments to Posts](https://user-images.githubusercontent.com/81491306/132041371-3e63f55d-3d16-4623-913d-060bb2751b9e.JPG)
 
   ## License
   N/A
@@ -55,11 +56,11 @@
 
   # Links
   ## GitHub Repo
-  [Link to GitHub Repo](https://github.com/JillianA328/whatihadfordinner)
+  [Link to GitHub Repo](https://github.com/lchinquee/slatorer)
 
   ## Heroku 
-  [Link to Deployed Website via Heroku](https://whatihadfordinner.herokuapp.com/)
+  [Link to Deployed Website via Heroku]()
 
   # References
   Rutgers Coding Bootcamp class materials, online documentation and TA resources.
-  Worked with Jillian Amelung and Marykate Smith
+  Worked with Jillian Amelung and Marykate Smith.
