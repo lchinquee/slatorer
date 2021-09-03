@@ -59,7 +59,7 @@
   [Link to GitHub Repo](https://github.com/lchinquee/slatorer)
 
   ## Heroku 
-  [Link to Deployed Website via Heroku]()
+  [Link to Deployed Website via Heroku](https://calm-depths-97144.herokuapp.com/)
 
   # References
   Rutgers Coding Bootcamp class materials, online documentation and TA resources.
