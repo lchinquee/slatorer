@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
-//find all users
+// Get all users
 router.get('/', (req, res) => {
   User.findAll({
     attributes: { exclude: ['[password'] }
@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     });
 });
 
-//find one user by id
+// Get one user by id
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -58,7 +58,7 @@ router.get('/:id', (req, res) => {
 });
 
 
-//create a new user
+// Create new user
 router.post('/', (req, res) => {
 
   User.create({
@@ -81,7 +81,7 @@ router.post('/', (req, res) => {
     });
 });
 
-//login by finding one user
+// Login by finding one user
 router.post('/login', (req, res) => {
   User.findOne({
     where: {
@@ -98,7 +98,7 @@ router.post('/login', (req, res) => {
       res.status(400).json({ message: 'Incorrect password!' });
       return;
     }
-    //include session data
+    // Include session data
     req.session.save(() => {
 
       req.session.user_id = dbUserData.id;
@@ -114,7 +114,7 @@ router.post('/login', (req, res) => {
     });
 });
 
-//logout by checking session 
+// Logout by checking session 
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -125,7 +125,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
-//update a user
+// Update a user
 router.put('/:id', (req, res) => {
 
   User.update(req.body, {
@@ -148,7 +148,7 @@ router.put('/:id', (req, res) => {
 
 });
 
-//delete a user
+// Delete a user
 router.delete('/:id', (req, res) => {
   User.destroy({
     where: {

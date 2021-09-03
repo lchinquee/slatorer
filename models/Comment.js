@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+// Create Comment model
 class Comment extends Model {}
 
 Comment.init(
@@ -14,7 +15,6 @@ Comment.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                // this means the comment must be at least one characters long
                 len: [1]
             }
         },

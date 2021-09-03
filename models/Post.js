@@ -1,10 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-//create Post model
+// Create Post model
 class Post extends Model {}
 
-//create field/columns for Post
 Post.init(
     {
       id: {
@@ -18,7 +17,6 @@ Post.init(
         allowNull: false
       },
       content: {
-        //use text because it is unlimited, unlike STRING
         type: DataTypes.TEXT,
         allowNull: false
       },

@@ -3,7 +3,7 @@ const { Post, User, Comment } = require('../../models');
 const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth');
 
-//get all posts
+// Get all posts
 router.get('/', (req, res) => {
     console.log('======================');
     Post.findAll({
@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
                 'content',
                 'created_at'
             ],
-            //sort posts in descending time order
+            // Sort in descending time order
             order: [
                 ['created_at', 'DESC']
             ],
@@ -39,7 +39,7 @@ router.get('/', (req, res) => {
 
 });
 
-//find one post by id to help with editing later
+// Find one post by id
 router.get('/:id', (req, res) => {
     Post.findOne({
             where: {
@@ -84,7 +84,7 @@ router.get('/:id', (req, res) => {
         });
 });
 
-//create a new post 
+// Create new post 
 router.post('/', withAuth, (req, res) => {
     Post.create({
             title: req.body.title,
@@ -100,7 +100,7 @@ router.post('/', withAuth, (req, res) => {
         });
 });
 
-//update a post by id
+// Update post by id
 router.put('/:id', withAuth, (req, res) => {
     Post.update(
         {
@@ -124,7 +124,7 @@ router.put('/:id', withAuth, (req, res) => {
         });
 });
 
-//delete a post by id
+// Delete post by id
 router.delete('/:id', withAuth, (req, res) => {
     Post.destroy({
         where: {
