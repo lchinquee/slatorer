@@ -10,7 +10,6 @@ router.get('/', (req, res) => {
             attributes: [
                 'id',
                 'title',
-                'link',
                 'content',
                 'created_at'
             ],
@@ -49,7 +48,6 @@ router.get('/:id', (req, res) => {
             attributes: [
                 'id',
                 'content',
-                'link',
                 'title',
                 'created_at'
             ],
@@ -69,7 +67,7 @@ router.get('/:id', (req, res) => {
             ]
         })
         .then(dbPostData => {
-            const previewLink = dbPostData.link
+            const previewLink = dbPostData
               const previewData = linkPreviewGenerator(
                 previewLink
             );
@@ -90,15 +88,12 @@ router.get('/:id', (req, res) => {
 router.post('/', withAuth, (req, res) => {
     Post.create({
             title: req.body.title,
-            link: req.body.link,
             content: req.body.content,
             user_id: req.session.user_id
         })
         .then(dbPostData => {
         res.json(dbPostData)
         })
-        //  res.render('dashboard')})
-        // res.render('dashboard')
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
@@ -110,7 +105,6 @@ router.put('/:id', withAuth, (req, res) => {
     Post.update(
         {
             title: req.body.title,
-            link: req.body.link,
             content: req.body.content
         }, 
         {

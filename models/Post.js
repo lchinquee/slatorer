@@ -22,13 +22,6 @@ Post.init(
         type: DataTypes.TEXT,
         allowNull: false
       },
-       link: {
-         type: DataTypes.STRING,
-         allowNull: false,
-         validate: {
-             isURL: true
-         }
-       },
       user_id: {
         type: DataTypes.INTEGER,
         references: {

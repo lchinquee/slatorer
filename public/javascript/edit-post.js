@@ -2,11 +2,7 @@ async function editFormHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="post-title"]').value.trim();
-  const link = document.querySelector('input[name="link"]').value.trim();
   const content = document.querySelector('input[name="content"]').value.trim();
-
-  //console.log(title);
-  //console.log(content);
 
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
@@ -17,7 +13,6 @@ async function editFormHandler(event) {
     body: JSON.stringify({
       post_id: id,
       title,
-      link,
       content
     }),
     headers: {
