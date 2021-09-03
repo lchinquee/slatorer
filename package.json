@@ -1,5 +1,5 @@
 {
-  "name": "whatihadfordinner",
+  "name": "reading-list",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JillianA328/whatihadfordinner.git"
+    "url": "git+https://github.com/lchinquee/slatorer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JillianA328/whatihadfordinner/issues"
+    "url": "https://github.com/lchinquee/slatorer/issues"
   },
-  "homepage": "https://github.com/JillianA328/whatihadfordinner#readme",
+  "homepage": "https://github.com/lchinquee/slatorer#readme",
   "dependencies": {
     "animate.css": "^4.1.1",
     "bcrypt": "^5.0.1",
